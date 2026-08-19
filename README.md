@@ -42,8 +42,6 @@ Create a `.env` file in the project root (see `.env.example` if provided) with:
 
 ```
 GOOGLE_API_KEY=your_google_api_key_here
-GROQ_API_KEY=your_groq_api_key_here
-
 LANGCHAIN_TRACING_V2=true
 LANGCHAIN_API_KEY=your_langsmith_api_key_here
 LANGCHAIN_PROJECT=search-agent
