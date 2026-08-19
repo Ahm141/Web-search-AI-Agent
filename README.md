@@ -8,7 +8,7 @@ An AI agent built with **LangChain** that answers questions using **Wikipedia** 
 - 📚 **Wikipedia search tool** — queries Wikipedia's REST API directly for reliable, dependency-light lookups
 - 📝 **Automatic conversation logging** — every question and answer is saved as a Markdown file in `conversations/`
 - 🔍 **LangSmith tracing** — full observability into the agent's reasoning and tool calls
-- 🧠 **Free LLM support** — works with Google Gemini (Google AI Studio free tier) or Groq
+- 🧠 **Free LLM support** — works with Google Gemini (Google AI Studio free tier)
 
 ## 🗂️ Project Structure
 
@@ -49,7 +49,6 @@ LANGCHAIN_ENDPOINT=https://api.smith.langchain.com
 ```
 
 - Get a **Google Gemini** key from [aistudio.google.com/apikey](https://aistudio.google.com/apikey) (free tier)
-- Get a **Groq** key from [console.groq.com](https://console.groq.com) (free tier)
 - LangSmith tracing is optional — leave the key blank or set `LANGCHAIN_TRACING_V2=false` to disable it
 
 ### 4. Run the agent
@@ -73,7 +72,7 @@ Type your question and press Enter. Type `exit` or `quit` to end the session.
 | Component      | Technology                          |
 |-----------------|--------------------------------------|
 | Orchestrator    | [LangChain](https://python.langchain.com/) v1 (`create_agent`) |
-| LLM             | Google Gemini 2.5 Flash / Groq (Llama 3.3) |
+| LLM             | Google Gemini 2.5 Flash |
 | Knowledge source | Wikipedia REST API                  |
 | Observability   | [LangSmith](https://smith.langchain.com/) |
 
